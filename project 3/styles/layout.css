@@ -1,0 +1,127 @@
+﻿/*style page made by javier navarro for assignment 3 and 4 in CIS 311*/
+#content{
+	position:relative;
+	width: 700px;
+	margin: 0 auto;
+	padding:0px;
+	background-color:#ffffff;
+	text-align:center;
+}
+/* this section below is what makes the navigation bar on top of the page
+it specifies bothe the box and the unoreder list as well as the links. it also an affect when the mouse is 
+hovering over the link. this took me a long time to do. please dont copy unless its a professor.
+if you do copy my navigation, please give me credit.*/
+#navigation {
+	width: 700px;
+	margin:0 auto;
+	clear: both;
+	overflow: hidden;
+	text-align:center;
+	background-color: #FFE395;
+	border-bottom:1px solid #708090;
+	border-top:1px solid #708090;
+}
+
+#navigation ul {
+	list-style-type: none;
+	width: auto;
+	margin: 0 auto;
+	padding: 0px;
+}
+#navigation li {
+	float: left;
+	
+	
+}
+#navigation a {
+	text-decoration: none;
+	color: #003831;
+	display:inline-block;
+	margin: 0 auto;
+	padding-left:28px;
+	padding-right:28px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	
+
+	background-color: #FFE395;
+}
+#navigation a:hover {
+	text-decoration: none;
+	color: #261111;
+	background-color: #cccccc;
+}
+#logo{
+	border: none;
+	height:50px;
+	width: 700px;
+
+}
+#logo a{
+	border:0px;
+}
+#contentpicture{
+	float:left;
+	margin:9px;
+	padding:5px;
+}
+#contentpictureright{
+	float:right;
+	margin: 8px;
+	padding: 5px;
+}
+#footer{
+	width:700px;
+	clear:both;
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align: center;
+	background-color:#687888;
+	
+}
+#footer p {
+	font-size: 10px;
+	text-align:center;
+}
+#footer a {
+	color: #393939;
+	text-decoration: underline;
+}
+#footer a:hover {
+	color: #fff939;
+	text-decoration: none;
+}
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	background-color:#003831;/*cal poly green*/
+		
+}
+h1{
+	font-family:"Comic Sans MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight:bold;
+	font-variant:small-caps;
+}
+h2{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	text-align:center;
+	
+	
+}
+h3{
+	font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size: 14px;
+	
+}
+p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;	
+	text-align:left;
+	padding:5px;
+	
+}
+li{
+	text-align:left;
+}

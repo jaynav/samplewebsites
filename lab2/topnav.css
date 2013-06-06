@@ -1,0 +1,39 @@
+/* CSS Document */
+
+
+
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+
+.bevelmenu{
+font: bold 13px arial;
+padding: 6px 0;
+margin: 0;
+width: 100%;
+background-color: #FFF2BF;
+text-align: left; /*set value to "right" for example to align menu to the right of page*/
+}
+
+.bevelmenu li{
+list-style: none;
+display: inline;
+}
+
+.bevelmenu li a{
+padding: 3px 0.5em;
+text-decoration: none;
+color: black;
+background-color: #FFF2BF;
+border: 2px solid #FFF2BF;
+}
+
+.bevelmenu li a:hover{
+color: black;
+background-color: #FFE271;
+border-style: outset;
+}
+
+html>body .bevelmenu li a:active{ /* Apply mousedown effect only to NON IE browsers */
+border-style: inset;
+}
+

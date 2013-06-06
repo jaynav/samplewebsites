@@ -1,0 +1,33 @@
+/* CSS Document */
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+color:#0033cc;
+background-color:#ffffff;
+}
+h1{
+font-family:Arial, Helvetica, sans-serif;
+font-size: 8px;
+color:#FF0066;
+width: 550px;
+}
+h2{
+font-family:Arial, Helvetica, sans-serif;
+font-size: 12px;
+color:#000000;
+width: 550px;
+}
+p{
+font-family:Arial, Helvetica, sans-serif;
+font-size: 19px;
+color:#0033cc;
+width: 550px;
+}
+a:link, a:visted, a:active{
+text-decoration:none;
+font-weight:bold}
+
+a:hover, {
+text-decoration:none;
+font-weight:bold;
+}

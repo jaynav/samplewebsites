@@ -1,0 +1,172 @@
+<!-- this times out-->
+<html>
+<head>
+<script type="text/javascript">
+function timedMsg()
+{
+var t=setTimeout("alert('I am displayed after 9 seconds!')",9000);
+}
+</script>
+</head>
+
+<body>
+<form>
+<input type="button" value="Display alert box!" onClick="timedMsg()" />
+</form>
+</body>
+
+</html>
+
+<!--this goes on forever good to show if a person has spent too much time onyour site-->
+<html>
+<head>
+<script type="text/javascript">
+var c=0;
+var t;
+var timer_is_on=0;
+
+function timedCount()
+{
+document.getElementById('txt').value=c;
+c=c+1;
+t=setTimeout("timedCount()",1000);
+}
+
+function doTimer()
+{
+if (!timer_is_on)
+  {
+  timer_is_on=1;
+  timedCount();
+  }
+}
+</script>
+</head>
+
+<body>
+<form>
+<input type="button" value="Start count!" onClick="doTimer()">
+<input type="text" id="txt" />
+</form>
+</body>
+</html>
+
+
+
+
+
+<!-- this stops the timer and starts it-->
+<html>
+<head>
+<script type="text/javascript">
+var c=0;
+var t;
+var timer_is_on=0;
+
+function timedCount()
+{
+document.getElementById('txt').value=c;
+c=c+1;
+t=setTimeout("timedCount()",1000);
+}
+
+function doTimer()
+{
+if (!timer_is_on)
+  {
+  timer_is_on=1;
+  timedCount();
+  }
+}
+
+function stopCount()
+{
+clearTimeout(t);
+timer_is_on=0;
+}
+</script>
+</head>
+
+<body>
+<form>
+<input type="button" value="Start count!" onClick="doTimer()">
+<input type="text" id="txt">
+<input type="button" value="Stop count!" onClick="stopCount()">
+</form>
+</body>
+</html>
+
+
+<!-- shows text that is timed-->
+
+<html>
+<head>
+<script type="text/javascript">
+function timedText()
+{
+var t1=setTimeout("document.getElementById('txt').value='2 seconds!'",2000);
+var t2=setTimeout("document.getElementById('txt').value='4 seconds!'",4000);
+var t3=setTimeout("document.getElementById('txt').value='6 seconds!'",6000);
+}
+</script>
+</head>
+
+<body>
+<form>
+<input type="button" value="Display timed text!" onclick="timedText()" />
+<input type="text" id="txt" />
+</form>
+<p>Click on the button above. The input field will tell you when two, four, and six seconds have passed.</p>
+</body>
+
+</html>
+
+
+
+<!-- digital clock-->
+
+
+<html>
+<head>
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+<div id="txt"></div>
+</body>
+</html>
+
+
+
+
+
+
+----------------http://javascript.internet.com/time-date/auto-expire.html------------
+http://javascript.internet.com/time-date/button-time.html
+http://javascript.internet.com/time-date/daily-greeting.html
+http://javascript.internet.com/time-date/days-left.html
+http://javascript.internet.com/navigation/dynamic-timed-redirect.html
+http://javascript.internet.com/time-date/time-spent-on-page.html
+
